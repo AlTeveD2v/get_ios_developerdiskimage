@@ -25,12 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - run: ls /Users
+      - run: /usr/bin/xcode-select --print-path
 
-      - run: /Users/*/
-      - run: /Users/*/Library/
-      - run: /Users/*/Library/Developer/
-      - run: /Users/*/Library/Developer/DeveloperDiskImages
+      - run: ls /Users/runner/Library/
+      - run: ls /Users/runner/Library/Developer/
+      - run: ls /Users/runner/Library/Developer/DeveloperDiskImages
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
