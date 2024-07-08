@@ -27,9 +27,8 @@ jobs:
 
       - run: /usr/bin/xcode-select --print-path
 
-      - run: ls /Applications/Xcode_15.0.1.app/Contents/Developer
-      - run: ls /Applications/Xcode_15.0.1.app/Contents/Developer/*
-      - run: find ~/Developer -name 'iPhoneOS*' -type d
+      - run: ls /Applications/Xcode_15.0.1.app/Contents/Resources
+      - run: ls /Applications/Xcode_15.0.1.app/Contents/Resources/*
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
